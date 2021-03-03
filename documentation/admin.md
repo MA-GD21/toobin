@@ -29,12 +29,14 @@ Development Team
 - Development Game Frame, Core Mechanics & State Machines
 - providing functionality for scripting/level design
 - weekly or bi-weekly builds in the dist-repository
+- UX Engineering (&Design)
  
 Art Team
 - Design Guidelines, Mood Boards, Art Direction
 - Level Design
 - 2D & 3D Assets, Animation
 - Setup level & update sprite sheets in Unity
+- UI Engineering (&Design)
 
 Sound Team
 - 2D & Spatial Sound Effects
