@@ -28,6 +28,7 @@ Development Team
 - Game Architecture Design, 
 - Development Game Frame, Core Mechanics & State Machines
 - providing functionality for scripting/level design
+- weekly or bi-weekly builds in the dist-repository
  
 Art Team
 - Design Guidelines, Mood Boards, Art Direction
