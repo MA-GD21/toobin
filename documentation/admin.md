@@ -5,7 +5,7 @@
 
 ## Project Roles
 
-| Role      	| Lead     	| Coworker 	| Mentor         	|
+| Role      	| Lead     	| Co-worker 	| Mentor         	|
 |---------------|:---------:|:---------:|:-----------------:|
 | Development 	| Akshay   	| Aiden    	| Roni           	|
 | Art         	| Alain    	| Andi     	| Akshay / Aiden 	|
