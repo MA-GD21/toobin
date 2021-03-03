@@ -9,7 +9,7 @@
 - Single Player should be possible (recreation of AI player will be decided later)
 - Project Status Reports on Tuesdays' Game Design Stand-up Meetings
 
-- Introduction of new or adapted Game Mechanics are introduced, after successful cloning of core gameplay and graphics
+- Introduction of new or adapted Game Mechanics after successful cloning of core gameplay and graphics
 
 
 ## Project Roles
