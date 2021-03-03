@@ -3,7 +3,7 @@
 
 ## Design Brief
 
-- Create a clone (look-like & feel-like) of the 1988 Atari Arcade game Toobin [1](1), [2](2), [3](3)
+- Create a clone (look-like & feel-like) of the 1988 Atari Arcade game Toobin [1][1], [2][2], [3][3]
 - At least one level is recreated
 - Local Multiplayer (no online mode)
 - Single Player should be possible (recreation of AI player will be decided later)
@@ -51,6 +51,7 @@ Producer
 - [Kickoff Meeting](/documentation/minutes/20210303_kickoff.md), 03.03.21 
 
 ## References
+
 [1]: https://www.youtube.com/watch?v=wW-UnMBLKQQ&list=WL&index=45 "Toobin Arcade Machine, YouTube"
 [2]: https://www.youtube.com/watch?v=bOjikmZuZz0 "Toobin' - Classic Arcade Game (Atari 1988)"
 [3]: https://archive.org/details/arcade_toobin "Toobin Internet Archive & Emulator"
