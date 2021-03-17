@@ -28,14 +28,17 @@ namespace ToobinLib.Controllers
                 transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self);
             }
 
-            if (Input.GetKey("down"))
+            if (Input.GetKeyDown("down"))
+            {
+                m_rigidbody2D.velocity = -transform.up * 1f;
+                Debug.Log("down was pressed");
+                // Move the object forward along its z axis 1 unit/second.
+                //transform.Translate(Vector3.forward * Time.deltaTime );
+            }
+            else
             {
                 //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-                //m_rigidbody2D.velocity = transform.forward * m_speed*1000;
-                // Move the object forward along its z axis 1 unit/second.
-                transform.Translate(Vector3.forward * Time.deltaTime );
-
-                Debug.Log("down was pressed");
+                m_rigidbody2D.velocity = -transform.up * 0.5f;
             }
         }
     }
