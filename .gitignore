@@ -3,7 +3,7 @@
 # =============== #
 Temp/
 Library/
- 
+Logs/
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
@@ -44,3 +44,5 @@ gitmodules
 # Ignore AseetBundles as it is a temp dir
 AssetBundles
 .idea/
+*.log
+
