@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Points_interface : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class Points_interface : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Button_OnReset()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
