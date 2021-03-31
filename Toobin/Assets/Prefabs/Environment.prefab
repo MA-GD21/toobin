@@ -40,7 +40,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586025051685218009}
   m_Enabled: 1
-  m_CellSize: {x: 8, y: 8, z: 0}
+  m_CellSize: {x: 64, y: 64, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -280,6 +280,8 @@ CompositeCollider2D:
         Y: -1520000000
       - X: -480000000
         Y: -1520000000
+  - m_Collider: {fileID: 2706561472713237311}
+    m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 143.99997, y: -152}
