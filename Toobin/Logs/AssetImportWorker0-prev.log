@@ -12,96 +12,112 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50062
+49317
 Successfully changed project path to: /Users/andibissig/Desktop/ZHdK/Module/GDMajor/Toobin/toobinunity/Toobin
 /Users/andibissig/Desktop/ZHdK/Module/GDMajor/Toobin/toobinunity/Toobin
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 40.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/andibissig/Desktop/ZHdK/Module/GDMajor/Toobin/toobinunity/Toobin/Assets
 GfxDevice: creating device client; threaded=0
-2021-03-31 16:06:34.037 Unity[2422:96339] Color LCD preferred device: AMD Radeon R9 M370X (high power)
-2021-03-31 16:06:34.037 Unity[2422:96339] Metal devices available: 2
-2021-03-31 16:06:34.037 Unity[2422:96339] 0: AMD Radeon R9 M370X (high power)
-2021-03-31 16:06:34.037 Unity[2422:96339] 1: Intel Iris Pro Graphics (low power)
-2021-03-31 16:06:34.038 Unity[2422:96339] Using device AMD Radeon R9 M370X (high power)
+2021-04-07 13:35:28.051 Unity[934:11293] Color LCD preferred device: AMD Radeon R9 M370X (high power)
+2021-04-07 13:35:28.051 Unity[934:11293] Metal devices available: 2
+2021-04-07 13:35:28.051 Unity[934:11293] 0: AMD Radeon R9 M370X (high power)
+2021-04-07 13:35:28.051 Unity[934:11293] 1: Intel Iris Pro Graphics (low power)
+2021-04-07 13:35:28.052 Unity[934:11293] Using device AMD Radeon R9 M370X (high power)
 Initializing Metal device caps: AMD Radeon R9 M370X
 Initialize mono
 Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56422
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56934
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001041 seconds.
+Registered in 0.000689 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 57.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 40.22 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.088 seconds
+- Completed reload, in  1.834 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000685 seconds.
+Registered in 0.000544 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 55.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 42.15 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.628 seconds
+- Completed reload, in  1.166 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1854 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 146.4 MB.
 System memory in use after: 146.5 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2302.
-Total: 3.471412 ms (FindLiveObjects: 0.422989 ms CreateObjectMapping: 0.143338 ms MarkObjects: 2.808408 ms  DeleteObjects: 0.095252 ms)
+Total: 2.914114 ms (FindLiveObjects: 0.259229 ms CreateObjectMapping: 0.091526 ms MarkObjects: 2.406841 ms  DeleteObjects: 0.152503 ms)
 
 ========================================================================
 Received Import Request.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab
-  artifactKey: Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Open Sprite Shape.prefab using Guid(86ae7de409eb54f619fb1328e4d42480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5afbbd395c5bddd7f7d4b0b1a3ff0b') in 0.519412 seconds
-  Import took 0.524035 seconds .
+  path: Assets/Sprites/Tiles/water.png
+  artifactKey: Guid(fe3981c8454c54037a2c4f28564c2cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tiles/water.png using Guid(fe3981c8454c54037a2c4f28564c2cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14dfc855209aeff9bbdd259b1cf2fb0') in 0.507582 seconds
+  Import took 0.511970 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab
-  artifactKey: Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Sprite Shapes/Closed Sprite Shape.prefab using Guid(c0583b4e855c74b8c82e7b9b5efb5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48775a4d0ba47d44f432ee6c79a6a75b') in 0.005861 seconds
-  Import took 0.009263 seconds .
+  Time since last request: 38.442248 seconds.
+  path: Assets/Sprites/player.png
+  artifactKey: Guid(fc3cc50b970ac40618237e249b5da72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/player.png using Guid(fc3cc50b970ac40618237e249b5da72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7613ebaeace35080c5d412d6db1a28e') in 0.010942 seconds
+  Import took 0.015300 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Prefabs/Environment.prefab
-  artifactKey: Guid(261b06b6e86ac4950a5ca33bb6977cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment.prefab using Guid(261b06b6e86ac4950a5ca33bb6977cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d67d19aa20dd2eed6b1e4606698bdbb') in 0.096671 seconds
-  Import took 0.102000 seconds .
+  Time since last request: 42.430517 seconds.
+  path: Assets/Sprites/player.png
+  artifactKey: Guid(fc3cc50b970ac40618237e249b5da72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/player.png using Guid(fc3cc50b970ac40618237e249b5da72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66af394318963353f16a1c5f30d8e67') in 0.008104 seconds
+  Import took 0.011861 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 65.389497 seconds.
-  path: Assets/Prefabs/Environment.prefab
-  artifactKey: Guid(261b06b6e86ac4950a5ca33bb6977cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment.prefab using Guid(261b06b6e86ac4950a5ca33bb6977cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4755ccc78c9a8dc2c6ab2e1a932c8a4') in 0.014094 seconds
-  Import took 0.019466 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000598 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.6 MB.
+System memory in use after: 152.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2312.
+Total: 2.622901 ms (FindLiveObjects: 0.246172 ms CreateObjectMapping: 0.089171 ms MarkObjects: 2.269246 ms  DeleteObjects: 0.016851 ms)
 
