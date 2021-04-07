@@ -1,699 +1,274 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'en' Physical Memory: 16261 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Programs\Unity\2020.3.0f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/ZHdK/toobin/Toobin
+/Users/aky_p/Documents/GitHub/toobin/Toobin
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59738
-Successfully changed project path to: D:/ZHdK/toobin/Toobin
-D:/ZHdK/toobin/Toobin
+52286
+Successfully changed project path to: /Users/aky_p/Documents/GitHub/toobin/Toobin
+/Users/aky_p/Documents/GitHub/toobin/Toobin
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 49.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
-[Subsystems] Discovering subsystems at path D:/Programs/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/ZHdK/toobin/Toobin/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/aky_p/Documents/GitHub/toobin/Toobin/Assets
 GfxDevice: creating device client; threaded=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
-    Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.6140
+2021-04-07 15:35:52.395 Unity[7832:305617] Color LCD preferred device: Intel Iris Pro Graphics (low power)
+2021-04-07 15:35:52.395 Unity[7832:305617] Metal devices available: 1
+2021-04-07 15:35:52.395 Unity[7832:305617] 0: Intel Iris Pro Graphics (low power)
+2021-04-07 15:35:52.396 Unity[7832:305617] Using device Intel Iris Pro Graphics (low power)
+Initializing Metal device caps: Intel Iris Pro Graphics
 Initialize mono
-Mono path[0] = 'D:/Programs/Unity/2020.3.0f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Programs/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Programs/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Programs/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/Programs/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: D:/Programs/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001736 seconds.
-Native extension for WindowsStandalone target not found
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000642 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 38.70 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 50.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.377 seconds
+- Completed reload, in  1.548 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000624 seconds.
+Registered in 0.000549 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 36.07 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 51.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.031 seconds
+- Completed reload, in  1.257 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1854 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.7 MB.
-System memory in use after: 87.8 MB.
+Unloading 1855 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.4 MB.
+System memory in use after: 146.5 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2302.
-Total: 2.465200 ms (FindLiveObjects: 0.411300 ms CreateObjectMapping: 0.172400 ms MarkObjects: 1.788000 ms  DeleteObjects: 0.092000 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2304.
+Total: 3.413774 ms (FindLiveObjects: 0.604862 ms CreateObjectMapping: 0.219861 ms MarkObjects: 2.490050 ms  DeleteObjects: 0.097326 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_48.asset
-  artifactKey: Guid(19c279a4449e24cc1aa2d57dfbbbd097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_48.asset using Guid(19c279a4449e24cc1aa2d57dfbbbd097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24c50beb6ec49e2d74bafc048e91d27') in 0.149645 seconds
-  Import took 0.153164 seconds .
+  path: Assets/Scenes/Start screen.unity
+  artifactKey: Guid(5eb357bee96114b9196be1a5ab96038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Start screen.unity using Guid(5eb357bee96114b9196be1a5ab96038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7561b0b818e3255ef3facaad9e3ccee3') in 0.013761 seconds
+  Import took 0.017481 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_1.asset
-  artifactKey: Guid(6915e6dc6851240e6aa405fe55fefc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_1.asset using Guid(6915e6dc6851240e6aa405fe55fefc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49869a7d6cab5fb8f7a718b871f0bc3e') in 0.015023 seconds
-  Import took 0.018128 seconds .
+  Time since last request: 631.555926 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e833f10a170ecd4be3f9639858c0b9') in 0.002264 seconds
+  Import took 0.006310 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_51.asset
-  artifactKey: Guid(7a31197bceb0b4dae84f6df28a37b682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_51.asset using Guid(7a31197bceb0b4dae84f6df28a37b682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9dd76a1068e999b8ac91adb23c90fc') in 0.014920 seconds
-  Import took 0.017905 seconds .
+  Time since last request: 21.081150 seconds.
+  path: Assets/Scenes/New Scene.unity
+  artifactKey: Guid(ac5a0c9fb98724e6f9c987e93a0a7b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene.unity using Guid(ac5a0c9fb98724e6f9c987e93a0a7b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c8065a45804de4f109d6dd5d291b3d') in 0.003416 seconds
+  Import took 0.008047 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_4.asset
-  artifactKey: Guid(1f9515ba14391447880894933f76c01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_4.asset using Guid(1f9515ba14391447880894933f76c01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f786a80d94c13d46e340fd19ba0ca7') in 0.014829 seconds
-  Import took 0.017899 seconds .
+  Time since last request: 991.740076 seconds.
+  path: Assets/Animation/Crossfade_End.anim
+  artifactKey: Guid(e9a512de496cf421e9325311855d1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Crossfade_End.anim using Guid(e9a512de496cf421e9325311855d1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824814d8c2e6ccd962b5d2edbb5b230e') in 0.048534 seconds
+  Import took 0.052671 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_14.asset
-  artifactKey: Guid(c3bbfe72ea9234bc2af5821963285f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_14.asset using Guid(c3bbfe72ea9234bc2af5821963285f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bafc57a2064cc387efe54e55bbe503d') in 0.013937 seconds
-  Import took 0.074108 seconds .
+  Time since last request: 6.843249 seconds.
+  path: Assets/Animation/Crossfade_start.anim
+  artifactKey: Guid(986171fd006ce43ca9d64f1cc2a6a8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Crossfade_start.anim using Guid(986171fd006ce43ca9d64f1cc2a6a8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5639d59d46577b6f9265877db42b22f') in 0.002358 seconds
+  Import took 0.005933 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_5.asset
-  artifactKey: Guid(4994daf997d8e4ae4936b4ebd199298e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_5.asset using Guid(4994daf997d8e4ae4936b4ebd199298e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6c88126f0c36e083f5de35ea2d6bf1') in 0.014647 seconds
-  Import took 0.017528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_19.asset
-  artifactKey: Guid(5896d95c987784212a665da028b5f403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_19.asset using Guid(5896d95c987784212a665da028b5f403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a50314107f274c68264fb5d867ac86') in 0.014501 seconds
-  Import took 0.017698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_25.asset
-  artifactKey: Guid(d6554e9dc9ff74d20b63108fb5837b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_25.asset using Guid(d6554e9dc9ff74d20b63108fb5837b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5028fa4fa0f4c7d1ccaf857b8541670d') in 0.014617 seconds
-  Import took 0.017611 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_37.asset
-  artifactKey: Guid(be8b8435fdea24b5cb323ca8a016f0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_37.asset using Guid(be8b8435fdea24b5cb323ca8a016f0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5840918aaa8057615758a6ed4f0675f3') in 0.015835 seconds
-  Import took 0.019017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_21.asset
-  artifactKey: Guid(7a34a4095a1d346c0b0f162ba936e5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_21.asset using Guid(7a34a4095a1d346c0b0f162ba936e5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497c30c44a716529cc77b02024863861') in 0.018096 seconds
-  Import took 0.021229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_44.asset
-  artifactKey: Guid(1b0d67d89935f403eb76e5e800830ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_44.asset using Guid(1b0d67d89935f403eb76e5e800830ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0e4620ce24ae8fad802968a0362827') in 0.018289 seconds
-  Import took 0.021591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_58.asset
-  artifactKey: Guid(5142910cad8684b068fbfd1a172f3604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_58.asset using Guid(5142910cad8684b068fbfd1a172f3604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8050a4b85fe77e8400f94a57008332cf') in 0.015074 seconds
-  Import took 0.018382 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_32.asset
-  artifactKey: Guid(b3f434ec612ab41e5a1beaf47973b343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_32.asset using Guid(b3f434ec612ab41e5a1beaf47973b343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30219b7011db9673e7a8b09f6609eccb') in 0.016926 seconds
-  Import took 0.020491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_22.asset
-  artifactKey: Guid(ed01b1bc9997341f29cec9380371f511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_22.asset using Guid(ed01b1bc9997341f29cec9380371f511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db778baa5ade4c19b2bb78b9265d481b') in 0.014653 seconds
-  Import took 0.017859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_29.asset
-  artifactKey: Guid(ad6023ba15e1343baa33beb1fd656f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_29.asset using Guid(ad6023ba15e1343baa33beb1fd656f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3db250c9a8e5eff59876e64fa936102') in 0.017101 seconds
-  Import took 0.020120 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_53.asset
-  artifactKey: Guid(a6752a16e3cf249109819e63936d3171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_53.asset using Guid(a6752a16e3cf249109819e63936d3171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff336288d51bbe2f001daa66267e738d') in 0.015247 seconds
-  Import took 0.018528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_34.asset
-  artifactKey: Guid(aa598d94f591c494c88f220fa0c503a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_34.asset using Guid(aa598d94f591c494c88f220fa0c503a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573c60686c842027946db9b2b6a75a3e') in 0.014012 seconds
-  Import took 0.017031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_50.asset
-  artifactKey: Guid(b78c8d4260ca2450cba6ced35d5cfd1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_50.asset using Guid(b78c8d4260ca2450cba6ced35d5cfd1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1890fe9ab5783403b0a2f1a3da09f7fb') in 0.019402 seconds
-  Import took 0.022413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_52.asset
-  artifactKey: Guid(f459c078f99b541d0a353e0e8e6f33c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_52.asset using Guid(f459c078f99b541d0a353e0e8e6f33c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ab34226fd5e9dc53922274d440323d') in 0.014137 seconds
-  Import took 0.017213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_60.asset
-  artifactKey: Guid(edd370eac254f4ec3a815a5616d922c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_60.asset using Guid(edd370eac254f4ec3a815a5616d922c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999aadf4e32d3fcaa1a25f331614ac6a') in 0.014143 seconds
-  Import took 0.017154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_28.asset
-  artifactKey: Guid(06684bfccb4894767a12be601e45f993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_28.asset using Guid(06684bfccb4894767a12be601e45f993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76765dfdab125da362e6bc289be283e9') in 0.015471 seconds
-  Import took 0.018538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_45.asset
-  artifactKey: Guid(21c04b6eedf064363920c7c94efcb4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_45.asset using Guid(21c04b6eedf064363920c7c94efcb4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29f3cb0d0a94de40d34ef607d24fc39') in 0.027350 seconds
-  Import took 0.030709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_62.asset
-  artifactKey: Guid(f21e1ab366da14f1cb75fb6b984f9d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_62.asset using Guid(f21e1ab366da14f1cb75fb6b984f9d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7accceed50412f6c7c08a0a661f25758') in 0.020782 seconds
-  Import took 0.024055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_33.asset
-  artifactKey: Guid(4b58a3835bf6a44a78170f87f2c8b5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_33.asset using Guid(4b58a3835bf6a44a78170f87f2c8b5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c7b42e13692bda6808a052ae23a78e') in 0.018117 seconds
-  Import took 0.021171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_47.asset
-  artifactKey: Guid(3a71078464e294019b07719cb0ea0c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_47.asset using Guid(3a71078464e294019b07719cb0ea0c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063c0c97c6173bf9a1068215c19dd523') in 0.014178 seconds
-  Import took 0.017514 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_13.asset
-  artifactKey: Guid(a7c5be3fe188e4630913275c16ecc893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_13.asset using Guid(a7c5be3fe188e4630913275c16ecc893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de60e24625e273075dfa26fd893dbaf4') in 0.013717 seconds
-  Import took 0.016717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_54.asset
-  artifactKey: Guid(3d2254b8ed7a7478884d60ae0fc9228c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_54.asset using Guid(3d2254b8ed7a7478884d60ae0fc9228c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389ab4aa6cd1c9574a94edb5ec5006a4') in 0.014767 seconds
-  Import took 0.017771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_24.asset
-  artifactKey: Guid(2c7ac5245127b4b3d8a6a66bb16c570c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_24.asset using Guid(2c7ac5245127b4b3d8a6a66bb16c570c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c51f39bbe300c9871012b118af9ea8') in 0.640089 seconds
-  Import took 0.642924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_36.asset
-  artifactKey: Guid(b977a4fb7af0740e8b9b5a41230fd7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_36.asset using Guid(b977a4fb7af0740e8b9b5a41230fd7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd96f3d996d3c6d9c041aed38b932254') in 0.013631 seconds
-  Import took 0.016792 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_16.asset
-  artifactKey: Guid(8bbad250b98184a29bd637fd8d2e587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_16.asset using Guid(8bbad250b98184a29bd637fd8d2e587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1609faf65e20aae1690ea7747c3f8c2') in 0.015569 seconds
-  Import took 0.019057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_31.asset
-  artifactKey: Guid(da119cda18b694d2980e46772c4c0f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_31.asset using Guid(da119cda18b694d2980e46772c4c0f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7b1107a54c4388302a38b58254fd95') in 0.014171 seconds
-  Import took 0.017381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Sprites/Tiles/beach
-  artifactKey: Guid(fa064bc99651949f08a3ae6f276b4623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach using Guid(fa064bc99651949f08a3ae6f276b4623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004655b151c76fd88476d5fb309fad67') in 0.006262 seconds
-  Import took 0.009740 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_8.asset
-  artifactKey: Guid(1a9d4cf66d5d74106b2bcc0f661ac30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_8.asset using Guid(1a9d4cf66d5d74106b2bcc0f661ac30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea1b858faf9ff961eb0d0effbf02104') in 0.014683 seconds
-  Import took 0.017923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_0.asset
-  artifactKey: Guid(b63fc4c12bddc4b4498f883d521b8051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_0.asset using Guid(b63fc4c12bddc4b4498f883d521b8051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618f9bb34d6c13b1e9c67f4447a041c3') in 0.177249 seconds
-  Import took 0.180097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_26.asset
-  artifactKey: Guid(836a5fc01de8d4f31a1ba98b3cb2254a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_26.asset using Guid(836a5fc01de8d4f31a1ba98b3cb2254a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116da82dba21be90ee4dad5898d467de') in 0.119343 seconds
-  Import took 0.121858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_55.asset
-  artifactKey: Guid(81ea633ba1ece41e8ad38a49199e715e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_55.asset using Guid(81ea633ba1ece41e8ad38a49199e715e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39411bd66f30d08d60d1f0c13fdf7c6e') in 0.103222 seconds
-  Import took 0.105695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_23.asset
-  artifactKey: Guid(afc7aa8bf3c6148cd92278a762460dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_23.asset using Guid(afc7aa8bf3c6148cd92278a762460dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ce45899c3a3ca27dab1cd4c445b129') in 0.090973 seconds
-  Import took 0.093419 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_63.asset
-  artifactKey: Guid(f1c21a4848264456881737947d1f139c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_63.asset using Guid(f1c21a4848264456881737947d1f139c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e47ee7ee4dfd01eb253082a2d569b9e') in 0.013171 seconds
-  Import took 0.015673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_61.asset
-  artifactKey: Guid(ae6d224c60802487ab84f34cd1cf54c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_61.asset using Guid(ae6d224c60802487ab84f34cd1cf54c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b899be01a4699afd687fcc289063bf') in 0.013511 seconds
-  Import took 0.016944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_6.asset
-  artifactKey: Guid(7c9a3df2512f342de87edd342424091d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_6.asset using Guid(7c9a3df2512f342de87edd342424091d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed72ceb9296fe347f65b346cf7b4ce4c') in 0.015258 seconds
-  Import took 0.018464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_15.asset
-  artifactKey: Guid(338d199ddb5c14838a053c21be5ac8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_15.asset using Guid(338d199ddb5c14838a053c21be5ac8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee31fc7f2528f6a1e32b4c41d1c8b49e') in 0.014592 seconds
-  Import took 0.017515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_57.asset
-  artifactKey: Guid(1706397a38cb741298c3b597783f82d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_57.asset using Guid(1706397a38cb741298c3b597783f82d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4808c45652d7c61e2be0dce5d98999ee') in 0.023972 seconds
-  Import took 0.027340 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Sprites/Tiles/water.png
-  artifactKey: Guid(fe3981c8454c54037a2c4f28564c2cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/water.png using Guid(fe3981c8454c54037a2c4f28564c2cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03097bff385ab4d759ab4843c2ad7cf') in 0.085751 seconds
-  Import took 0.088617 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Sprites/Tiles/LevelPalette.prefab
-  artifactKey: Guid(4662b9da2965b46938b9ca7ea5edd9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/LevelPalette.prefab using Guid(4662b9da2965b46938b9ca7ea5edd9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d51289096e6c7a7cd28444759bc9ad') in 0.014751 seconds
-  Import took 0.017463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_46.asset
-  artifactKey: Guid(d5b5262ef167a445bb7b303d8abf4484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_46.asset using Guid(d5b5262ef167a445bb7b303d8abf4484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0e7163e97e621e877ea6ce8037948a') in 0.017647 seconds
-  Import took 0.021473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_59.asset
-  artifactKey: Guid(515be9d5c9b6d487f94e10595d3b9c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_59.asset using Guid(515be9d5c9b6d487f94e10595d3b9c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65edb8908e47865d22a956e9ebedd348') in 0.015825 seconds
-  Import took 0.019042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_20.asset
-  artifactKey: Guid(6d19c95b91ff7488daf02916924513b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_20.asset using Guid(6d19c95b91ff7488daf02916924513b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c555a29c03e240f50b972208fa7d43f') in 0.017218 seconds
-  Import took 0.035941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_49.asset
-  artifactKey: Guid(42e3a290de5684ad8b76f587f920f7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_49.asset using Guid(42e3a290de5684ad8b76f587f920f7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185dfd4e1da06d97a2a02a6f34c56683') in 0.014680 seconds
-  Import took 0.017776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_38.asset
-  artifactKey: Guid(519187adfe7b847989bd989428363e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_38.asset using Guid(519187adfe7b847989bd989428363e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c7e5bcac1388badf3b439c8a613f02') in 0.017846 seconds
-  Import took 0.021376 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64.png
-  artifactKey: Guid(6f0cecf15a1214a07b509afbaa157f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64.png using Guid(6f0cecf15a1214a07b509afbaa157f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4e9c464b633f40faf70ddefc641cb5') in 0.237327 seconds
-  Import took 0.240711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_12.asset
-  artifactKey: Guid(38fe4c2bd3f194130aa507b87a6e8a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_12.asset using Guid(38fe4c2bd3f194130aa507b87a6e8a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549932f3ab04f7e6c743a03576cda223') in 0.018100 seconds
-  Import took 0.021000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_43.asset
-  artifactKey: Guid(a251100034e5649f7b6ad38996dba58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_43.asset using Guid(a251100034e5649f7b6ad38996dba58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b8b6bdf6717477e28bb343979d12e1b') in 0.015266 seconds
-  Import took 0.018533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_39.asset
-  artifactKey: Guid(a3cd149ebb7a04db0a4fefc406ad4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_39.asset using Guid(a3cd149ebb7a04db0a4fefc406ad4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06acc7b332d923e1877830fe02c9babf') in 0.014875 seconds
-  Import took 0.018339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_2.asset
-  artifactKey: Guid(59132624ec4664d17b2415141264174c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_2.asset using Guid(59132624ec4664d17b2415141264174c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837bc952bf277529554ab7d1b59f8d65') in 0.015739 seconds
-  Import took 0.018940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_17.asset
-  artifactKey: Guid(9a652d59179794cb1822d1e01ecb03bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_17.asset using Guid(9a652d59179794cb1822d1e01ecb03bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6520566074c91ef73784df6ce6e09cd5') in 0.016728 seconds
-  Import took 0.020345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_41.asset
-  artifactKey: Guid(73684ae4e77b249ec99acd1e2bfd027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_41.asset using Guid(73684ae4e77b249ec99acd1e2bfd027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b3435192cd085dc6b36fa2fc7ed798') in 0.018808 seconds
-  Import took 0.022153 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_18.asset
-  artifactKey: Guid(6df5f4103e9454f0695864d849ee17ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_18.asset using Guid(6df5f4103e9454f0695864d849ee17ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb131473f6afbba3963e82c4df5eb35') in 0.014590 seconds
-  Import took 0.017757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_30.asset
-  artifactKey: Guid(df3a965ad6d3b4984be0b25976ca21e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_30.asset using Guid(df3a965ad6d3b4984be0b25976ca21e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0df06b616e45aa04778c4b3ba9d8ec3') in 0.016359 seconds
-  Import took 0.019349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_40.asset
-  artifactKey: Guid(2727b8ef6036b430fb65d98bb2f78a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_40.asset using Guid(2727b8ef6036b430fb65d98bb2f78a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911a592dc31d9da509983c44a16d8d8c') in 0.014340 seconds
-  Import took 0.017789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_27.asset
-  artifactKey: Guid(d878dde620c1c4e71b1d89f5262b5434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_27.asset using Guid(d878dde620c1c4e71b1d89f5262b5434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b142160f97a19d9a4160b53240e44df') in 0.020828 seconds
-  Import took 0.024520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_11.asset
-  artifactKey: Guid(ca3a15e815fa84b739e529b1e1fdee0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_11.asset using Guid(ca3a15e815fa84b739e529b1e1fdee0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f26649c48aabf4d3502a70cfc49a49c') in 0.015734 seconds
-  Import took 0.019139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_9.asset
-  artifactKey: Guid(38ec0b3c7da8641178811a63c18c6dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_9.asset using Guid(38ec0b3c7da8641178811a63c18c6dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2968663f22bbf13fbe26a4f69a05926') in 0.019663 seconds
-  Import took 0.023163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_56.asset
-  artifactKey: Guid(43af614cc0eba466083fe74f488d307a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_56.asset using Guid(43af614cc0eba466083fe74f488d307a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d61adc67e0e8a0d0df2f94f02c1e883') in 0.015785 seconds
-  Import took 0.019657 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Sprites/Tiles
-  artifactKey: Guid(415120f2755ac1244b7d96094e9e373f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles using Guid(415120f2755ac1244b7d96094e9e373f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e607b8c7ec3f9a99b104a5abfe11520d') in 0.007465 seconds
-  Import took 0.011082 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_3.asset
-  artifactKey: Guid(b5875e696cc61476295cce8eaab5c997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_3.asset using Guid(b5875e696cc61476295cce8eaab5c997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0534d1e1f67428baa3ef7022d8fff404') in 0.018424 seconds
-  Import took 0.021807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_10.asset
-  artifactKey: Guid(00fdac310d22f457b96b249918b9659f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_10.asset using Guid(00fdac310d22f457b96b249918b9659f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd876a7dae71e958b123bae53fa7b90b') in 0.016181 seconds
-  Import took 0.019345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_35.asset
-  artifactKey: Guid(47532eacf12454ae1a6f54df1c84c9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_35.asset using Guid(47532eacf12454ae1a6f54df1c84c9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86455cb96bcef20085cf300ff43f904c') in 0.014827 seconds
-  Import took 0.017992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_7.asset
-  artifactKey: Guid(4d198f474f41a4057bf971d0d8dcf34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_7.asset using Guid(4d198f474f41a4057bf971d0d8dcf34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9136b95a84bffcd38368add02f81fb6a') in 0.015827 seconds
-  Import took 0.019076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_42.asset
-  artifactKey: Guid(844da1d2d9c324669bd006d8b2e61f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64_42.asset using Guid(844da1d2d9c324669bd006d8b2e61f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06a60a3d4a1fcc459ff459c443573b4') in 0.014846 seconds
-  Import took 0.017997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 586.758471 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64.png
-  artifactKey: Guid(6f0cecf15a1214a07b509afbaa157f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64.png using Guid(6f0cecf15a1214a07b509afbaa157f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d62d5a3ee9bf5ef9ce85a24daebf92') in 0.155617 seconds
-  Import took 0.159126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 90.271427 seconds.
-  path: Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64.png
-  artifactKey: Guid(6f0cecf15a1214a07b509afbaa157f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/beach/beach_tile_test_03_64x64.png using Guid(6f0cecf15a1214a07b509afbaa157f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f029300595a4efbc9ddb368d4d14195d') in 0.167438 seconds
-  Import took 0.170368 seconds .
+  Time since last request: 19.605252 seconds.
+  path: Assets/Animation/Crossfade.controller
+  artifactKey: Guid(38b2784652b314d3989ebfcb58cfe910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Crossfade.controller using Guid(38b2784652b314d3989ebfcb58cfe910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75ea43c2e322165f503cf0341544991') in 0.030340 seconds
+  Import took 0.035021 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000804 seconds.
+Registered in 0.000649 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.002 seconds
+- Completed reload, in  1.059 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.3 MB.
-System memory in use after: 89.5 MB.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.3 MB.
+System memory in use after: 153.5 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2316.
-Total: 2.133400 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.096400 ms MarkObjects: 1.770100 ms  DeleteObjects: 0.015300 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2309.
+Total: 2.374124 ms (FindLiveObjects: 0.300276 ms CreateObjectMapping: 0.070325 ms MarkObjects: 1.987301 ms  DeleteObjects: 0.014671 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000887 seconds.
+Registered in 0.000927 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.171 seconds
+- Completed reload, in  1.138 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1827 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.4 MB.
-System memory in use after: 89.5 MB.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.6 MB.
+System memory in use after: 153.7 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2320.
-Total: 2.467200 ms (FindLiveObjects: 0.216300 ms CreateObjectMapping: 0.097200 ms MarkObjects: 2.134100 ms  DeleteObjects: 0.018400 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2313.
+Total: 3.524345 ms (FindLiveObjects: 0.497899 ms CreateObjectMapping: 0.085312 ms MarkObjects: 2.919293 ms  DeleteObjects: 0.020566 ms)
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 1299.142328 seconds.
+  path: Assets/Prefabs/Levelloader.prefab
+  artifactKey: Guid(ddf89f41cdc9a4015bbc816f09507626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Levelloader.prefab using Guid(ddf89f41cdc9a4015bbc816f09507626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8433208b3afb6a3621c21b82a32265c') in 0.087073 seconds
+  Import took 0.094678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.477056 seconds.
+  path: Assets/Scenes/Start screen.unity
+  artifactKey: Guid(5eb357bee96114b9196be1a5ab96038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Start screen.unity using Guid(5eb357bee96114b9196be1a5ab96038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2508c20aa0b481cc3cc8d96d992d7d11') in 0.001930 seconds
+  Import took 0.006722 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000538 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.170 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.1 MB.
+System memory in use after: 158.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2317.
+Total: 3.751856 ms (FindLiveObjects: 0.261623 ms CreateObjectMapping: 0.115370 ms MarkObjects: 3.351663 ms  DeleteObjects: 0.020907 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000875 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.3 MB.
+System memory in use after: 158.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2321.
+Total: 2.562343 ms (FindLiveObjects: 0.322269 ms CreateObjectMapping: 0.069716 ms MarkObjects: 2.153492 ms  DeleteObjects: 0.014258 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.589763 seconds.
+  path: Assets/Animation/Crossfade_End.anim
+  artifactKey: Guid(e9a512de496cf421e9325311855d1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Crossfade_End.anim using Guid(e9a512de496cf421e9325311855d1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e9d95a85ce81b1840460ce097d97b8') in 0.012976 seconds
+  Import took 0.017099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.752215 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b684176f1c8736a36f852cbf3552311d') in 0.001188 seconds
+  Import took 0.005227 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000619 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.154 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.5 MB.
+System memory in use after: 158.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2325.
+Total: 2.521856 ms (FindLiveObjects: 0.201016 ms CreateObjectMapping: 0.069693 ms MarkObjects: 2.233387 ms  DeleteObjects: 0.016390 ms)
+

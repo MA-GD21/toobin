@@ -8,7 +8,7 @@ namespace ToobinLib.Controllers
 {
 
 
-    public class PlayerController : MonoBehaviour
+    public class PlayerController2 : MonoBehaviour
     {
 
 
@@ -19,7 +19,7 @@ namespace ToobinLib.Controllers
 
         private IEnumerator coroutine;
 
-        [SerializeField] int m_speed = 200;
+        [SerializeField] int m_speed = 100;
         [SerializeField] Rigidbody2D m_rigidbody2D;
 
         // Start is called before the first frame update
@@ -27,18 +27,17 @@ namespace ToobinLib.Controllers
         {
 
             var rotation = 0;
-          
+            var direction = 0;
         }
 
 
         // Update is called once per frame
         void Update()
-
-
-
-        {   // L Paddle Forward
+        {
             if (Input.GetKeyDown(KeyCode.A))
             {
+                transform.Rotate(Vector3.back * m_speed * Time.deltaTime, Space.Self);
+
                 if (m_rigidbody2D.velocity.magnitude > 20f)
                 { m_rigidbody2D.velocity = -transform.up * 20f; }
                 else
@@ -51,17 +50,10 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            //L Paddle Rotate
-            if (Input.GetKey(KeyCode.A))
-            { transform.Rotate(Vector3.back * m_speed * Time.deltaTime, Space.Self); }
-
-            //R Paddle Forward
             if (Input.GetKeyDown(KeyCode.D))
             {
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = -transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = -transform.up * 40f; }
+                transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self);
+                m_rigidbody2D.velocity = -transform.up * 20f;
 
                 if (coroutine != null)
                 {
@@ -69,39 +61,11 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            // R Paddle Rotate
-            if (Input.GetKey(KeyCode.D))
-            { transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self); }
 
-
-            // L Paddle Backwards
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = transform.up * 40f; }
-
-                if (coroutine != null)
-                {
-                    StopCoroutine(coroutine);
-                    coroutine = ChangeSpeed(false, 0.1f);
-                    StartCoroutine(coroutine);
-                }
-            }
-            // L Paddle Backwards Rotate
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
             {
                 transform.Rotate(Vector3.back * m_speed * Time.deltaTime, Space.Self);
-            }
-
-            // R Paddle Backwards
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = transform.up * 40f; }
+                m_rigidbody2D.velocity = -transform.up * 20f;
 
                 if (coroutine != null)
                 {
@@ -110,11 +74,33 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            // R Paddle Backwards Rotate
+
             if (Input.GetKey(KeyCode.Q))
             {
-                transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self);
+                transform.Rotate(Vector3.back * m_speed * Time.deltaTime, Space.Self);
+                m_rigidbody2D.velocity = transform.up * 20f;
+
+                if (coroutine != null)
+                {
+                    StopCoroutine(coroutine);
+                    coroutine = ChangeSpeed(false, 0.1f);
+                    StartCoroutine(coroutine);
+                }
             }
+
+            if (Input.GetKey(KeyCode.E))
+            {
+                transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self);
+                m_rigidbody2D.velocity = transform.up * 20f;
+
+                if (coroutine != null)
+                {
+                    StopCoroutine(coroutine);
+                    coroutine = ChangeSpeed(false, 0.1f);
+                    StartCoroutine(coroutine);
+                }
+            }
+
         }
 
         // every 2 seconds perform the print()
