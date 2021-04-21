@@ -1,9 +1,17 @@
 # Sprint 2 Planning Meeting Minutes
-[draft]
 
 ## Project Status
-- tbd 
+The following tasks have been completed:
+- Basic Project Setup
+- Graphics Wireframing & Level Editor
+- Simple Enemy movement
+- Basic Sound Effects
 
+The following tasks are almost completed:
+- Character Controller with all movement & accelleration
+- Core Game Setup
+- Asset placeholders & hi-fi Graphics for segment 1
+- Level first segment reproduction
 
 ## Timeline & Milestones
 - Considering all the other ZHdK activities, specifically from the minor, there is (with the current date) only 6 afternoons left to finalize the project.
@@ -34,4 +42,7 @@ MVP Game
 
 - Does the organization work as is?
 - Which team needs extra support?
-- Whois responsible for what?
+- Who is responsible for what?
+
+We went through the tickets and the status together. So far the team composition seems to work. If someone has additional resources to help (specifically help the dev team) we should discuss it on a case-to-case basis. For example Roni will take care of implementing the sound engine in the game.
+
