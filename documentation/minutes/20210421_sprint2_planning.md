@@ -17,11 +17,18 @@
 - On Tuesday, 04. May, we will have a Milestone where we want to playtest the first prototype with the other master students
 - Therefore until 03.05 we need a playable prototype and builds that are ready
 
+MVP Game
+- Play with the main character and be able to finish the first segment of the first level.
+- There are basic animations for players and selected assets. All assets for the first segment are high fidelity.
+- The player collides with the level borders
+- The following game states are implemented: game start, (death) game reset, play
+- Basic enemies with simple moving patterns
+- Health meter for player
 
 ## Organization
 - Keep the tickets organized
 - Inform others about your progress
-- Be on time (work hours wednesday from 1 PM to xx PM?)
+- Be on time (work hours wednesday from 1 PM to 5 PM?)
 
 ## Varia
 
