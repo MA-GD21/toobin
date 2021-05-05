@@ -17,7 +17,7 @@ namespace ToobinLib.Controllers
 
         [SerializeField] int m_speed = 200;
         [SerializeField] Rigidbody2D m_rigidbody2D;
-        int current_lives = 1;
+        int current_lives = 2;
         const int MAX_LIVES = 2;
 
         private void Start()
