@@ -6,12 +6,8 @@ using UnityEngine;
 
 namespace ToobinLib.Controllers
 {
-
-
     public class PlayerController : MonoBehaviour
     {
-
-
         //Q = L Paddle Backward
         //E = R Paddle Backward
         //A = L Paddle Forward
@@ -21,22 +17,18 @@ namespace ToobinLib.Controllers
 
         [SerializeField] int m_speed = 200;
         [SerializeField] Rigidbody2D m_rigidbody2D;
+        int current_lives = 1;
+        const int MAX_LIVES = 2;
 
-        // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
-
-            var rotation = 0;
-          
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives);
         }
-
 
         // Update is called once per frame
         void Update()
-
-
-
-        {   // L Paddle Forward
+        {
+            // L Paddle Forward
             if (Input.GetKeyDown(KeyCode.A))
             {
                 if (m_rigidbody2D.velocity.magnitude > 20f)
@@ -115,6 +107,8 @@ namespace ToobinLib.Controllers
             {
                 transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self);
             }
+
+            GameManager.Instance.SetCameraYaxis(transform.localPosition.y);
         }
 
         // every 2 seconds perform the print()
@@ -128,6 +122,48 @@ namespace ToobinLib.Controllers
                 else
                     m_speed = m_speed - 5;
             }
+        }
+
+        public void GetDamage()
+        {
+            current_lives--;
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+
+            if (current_lives <= 0)
+            {
+                this.gameObject.SetActive(false);
+                // game over screen should be here
+            }
+        }
+
+        public void AddLives()
+        {
+            current_lives++;
+
+            if (current_lives > MAX_LIVES)
+                current_lives = MAX_LIVES;
+
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+        }
+
+        private void OnTriggerEnter2D(Collider2D collider)
+        {
+            print("player interacted with " + collider.gameObject.name);
+            if (collider.tag == "Enemy")
+            {
+                current_lives--;
+                GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+                if (current_lives <= 0)
+                {
+                    // Game Over
+                    GameManager.Instance.GameOver();
+                }
+                else
+                {
+                    // flashes without colliding
+                }
+            }
+
         }
     }
 }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c849e9672b72841d9a3b73a262768fae
+=======
+guid: de41a0a220fb69b4c9c4d494d48c2469
+>>>>>>> Handeling enemies, items, score, lives and fixing errors
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

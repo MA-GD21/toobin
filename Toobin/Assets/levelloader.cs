@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class levelloader : MonoBehaviour
+public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
 
@@ -11,11 +11,17 @@ public class levelloader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+       /* if (Input.anyKey)
         {
             LoadNextLevel();
-        }
+        }*/
     }
+
+    public void PlayAnimation()
+    {
+        transition.SetTrigger("Start");
+    }
+
     public void LoadNextLevel()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
@@ -24,7 +30,7 @@ public class levelloader : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        transition.SetTrigger("start");
+        transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
