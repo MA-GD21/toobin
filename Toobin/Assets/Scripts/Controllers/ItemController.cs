@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
-    enum ItemType { Can, GreenChest, RedChest, GoldChest }
+    enum ItemType { Can, GreenChest, RedChest, GoldChest, Ball }
 
     [SerializeField] ItemType m_itemType;
     // green - 200 pt
