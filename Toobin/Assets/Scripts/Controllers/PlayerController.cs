@@ -13,12 +13,14 @@ namespace ToobinLib.Controllers
         //A = L Paddle Forward
         //D = R Paddle Forward
 
-        private IEnumerator coroutine;
+        private IEnumerator coroutine = null;
         [SerializeField] int m_alpha = 0;
-        [SerializeField] int m_speed = 200;
+        [SerializeField] int m_speed = 100;
         [SerializeField] Rigidbody2D m_rigidbody2D;
         int current_lives = 2;
         const int MAX_LIVES = 2;
+        bool m_isGoingForward = true;
+        bool m_isKeyPressed = false;
 
         private void Start()
         {
@@ -28,43 +30,25 @@ namespace ToobinLib.Controllers
         // Update is called once per frame
         void Update()
         {
-
-
-
             // L Paddle Forward
             if (Input.GetKeyDown(KeyCode.A))
             {   //i think this code adds too much +5 to m_alpha (the turn angle) during one button press. Maybe use a courotine to only add +5 once?
                 m_alpha += 5;
+                m_isKeyPressed = true;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
                 //Is there a better solution to accelerate the player? 
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = -transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = -transform.up * 40f; }
-
-                if (coroutine != null)
-                {
-                    StopCoroutine(coroutine);
-                    coroutine = ChangeSpeed(true, 0.1f);
-                    StartCoroutine(coroutine);
-                }
+                m_rigidbody2D.velocity = -transform.up * m_speed;
+                Handlecoroutine(true);
             }
 
             //R Paddle Forward
             if (Input.GetKeyDown(KeyCode.D))
             {
+                m_isKeyPressed = true;
                 m_alpha += -5;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = -transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = -transform.up * 40f; }
-
-                if (coroutine != null)
-                {
-
-                    StartCoroutine(coroutine);
-                }
+                m_rigidbody2D.velocity = -transform.up * m_speed;
+                Handlecoroutine(true);
             }
 
             //need code for button press R paddle forward & l paddle forward to just accelerate the player without turning him in either direction
@@ -72,56 +56,72 @@ namespace ToobinLib.Controllers
             // L Paddle Backwards
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                m_isKeyPressed = true;
                 m_alpha += 5;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = transform.up * 40f; }
-
-                if (coroutine != null)
-                {
-                    StopCoroutine(coroutine);
-                    coroutine = ChangeSpeed(false, 0.1f);
-                    StartCoroutine(coroutine);
-                }
+                m_rigidbody2D.velocity = transform.up * m_speed;
+                Handlecoroutine(false);
             }
-
 
             // R Paddle Backwards
             if (Input.GetKeyDown(KeyCode.E))
             {
+                m_isKeyPressed = true;
                 m_alpha += -5;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
-                if (m_rigidbody2D.velocity.magnitude > 20f)
-                { m_rigidbody2D.velocity = transform.up * 20f; }
-                else
-                { m_rigidbody2D.velocity = transform.up * 40f; }
-
-                if (coroutine != null)
-                {
-                    StopCoroutine(coroutine);
-                    coroutine = ChangeSpeed(false, 0.1f);
-                    StartCoroutine(coroutine);
-                }
+                m_rigidbody2D.velocity = transform.up * m_speed;
+                Handlecoroutine(false);
             }
 
+            if (!m_isKeyPressed || m_rigidbody2D.velocity == Vector2.zero || m_speed == 0)
+                m_rigidbody2D.velocity = m_rigidbody2D.velocity - new Vector2(0, 0.1f);
 
+            m_isKeyPressed = false;
 
+            m_alpha = 0;
             GameManager.Instance.SetCameraYaxis(transform.localPosition.y);
         }
 
         // every 2 seconds perform the print()
         private IEnumerator ChangeSpeed(bool isIncrease, float waitTime)
         {
-            while (m_speed > 0)
+            yield return new WaitForSeconds(waitTime);
+
+            if (isIncrease)
             {
-                yield return new WaitForSeconds(waitTime);
-                if (isIncrease)
-                    m_speed = m_speed + 5;
+                if (!m_isGoingForward)
+                {
+                    m_isGoingForward = true;
+                    m_speed = 0;
+                    m_rigidbody2D.velocity = Vector2.zero;
+                }
                 else
-                    m_speed = m_speed - 5;
+                {
+                    m_speed = Mathf.Min(m_speed + 5, 150);
+                }
             }
+            else
+            {
+                if (m_isGoingForward)
+                {
+                    m_isGoingForward = false;
+                    m_speed = 0;
+                    m_rigidbody2D.velocity = Vector2.zero;
+                }
+                else
+                {
+                    m_speed = Mathf.Min(m_speed + 5, 150);
+                }
+            }
+        }
+
+        private void Handlecoroutine(bool increase)
+        {
+            if (coroutine != null)
+                StopCoroutine(coroutine);
+
+            coroutine = ChangeSpeed(increase, 0.1f);
+            StartCoroutine(coroutine);
         }
 
         public void GetDamage()
@@ -151,6 +151,7 @@ namespace ToobinLib.Controllers
             print("player interacted with " + collider.gameObject.name);
             if (collider.tag == "Enemy")
             {
+                m_speed = 0;
                 current_lives--;
                 GameManager.Instance.PointsInterface.UpdateLives(current_lives);
                 if (current_lives <= 0)
@@ -163,7 +164,10 @@ namespace ToobinLib.Controllers
                     // flashes without colliding
                 }
             }
-
+            /*if (collider.tag == "Sand")
+            {
+                m_speed = 0;
+            }*/
         }
     }
 }
