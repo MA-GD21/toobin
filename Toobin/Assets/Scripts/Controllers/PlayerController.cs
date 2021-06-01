@@ -14,7 +14,7 @@ namespace ToobinLib.Controllers
         //D = R Paddle Forward
 
         private IEnumerator coroutine;
-
+        [SerializeField] int m_alpha = 0;
         [SerializeField] int m_speed = 200;
         [SerializeField] Rigidbody2D m_rigidbody2D;
         int current_lives = 2;
@@ -28,9 +28,15 @@ namespace ToobinLib.Controllers
         // Update is called once per frame
         void Update()
         {
+
+
+
             // L Paddle Forward
             if (Input.GetKeyDown(KeyCode.A))
-            {
+            {   //i think this code adds too much +5 to m_alpha (the turn angle) during one button press. Maybe use a courotine to only add +5 once?
+                m_alpha += 5;
+                transform.Rotate(new Vector3(0, 0, m_alpha));
+                //Is there a better solution to accelerate the player? 
                 if (m_rigidbody2D.velocity.magnitude > 20f)
                 { m_rigidbody2D.velocity = -transform.up * 20f; }
                 else
@@ -43,13 +49,12 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            //L Paddle Rotate
-            if (Input.GetKey(KeyCode.A))
-            { transform.Rotate(Vector3.back * m_speed * Time.deltaTime, Space.Self); }
 
             //R Paddle Forward
             if (Input.GetKeyDown(KeyCode.D))
             {
+                m_alpha += -5;
+                transform.Rotate(new Vector3(0, 0, m_alpha));
                 if (m_rigidbody2D.velocity.magnitude > 20f)
                 { m_rigidbody2D.velocity = -transform.up * 20f; }
                 else
@@ -61,14 +66,14 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            // R Paddle Rotate
-            if (Input.GetKey(KeyCode.D))
-            { transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self); }
 
+            //need code for button press R paddle forward & l paddle forward to just accelerate the player without turning him in either direction
 
             // L Paddle Backwards
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                m_alpha += 5;
+                transform.Rotate(new Vector3(0, 0, m_alpha));
                 if (m_rigidbody2D.velocity.magnitude > 20f)
                 { m_rigidbody2D.velocity = transform.up * 20f; }
                 else
@@ -81,15 +86,13 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            // L Paddle Backwards Rotate
-            if (Input.GetKey(KeyCode.E))
-            {
-                transform.Rotate(Vector3.back * m_speed * Time.deltaTime, Space.Self);
-            }
+
 
             // R Paddle Backwards
             if (Input.GetKeyDown(KeyCode.E))
             {
+                m_alpha += -5;
+                transform.Rotate(new Vector3(0, 0, m_alpha));
                 if (m_rigidbody2D.velocity.magnitude > 20f)
                 { m_rigidbody2D.velocity = transform.up * 20f; }
                 else
@@ -102,11 +105,8 @@ namespace ToobinLib.Controllers
                     StartCoroutine(coroutine);
                 }
             }
-            // R Paddle Backwards Rotate
-            if (Input.GetKey(KeyCode.Q))
-            {
-                transform.Rotate(Vector3.forward * m_speed * Time.deltaTime, Space.Self);
-            }
+
+
 
             GameManager.Instance.SetCameraYaxis(transform.localPosition.y);
         }
