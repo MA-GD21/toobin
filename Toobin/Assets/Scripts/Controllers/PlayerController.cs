@@ -79,7 +79,7 @@ namespace ToobinLib.Controllers
             m_isKeyPressed = false;
 
             m_alpha = 0;
-            GameManager.Instance.SetCameraYaxis(transform.localPosition.y);
+            GameManager.Instance.SetCameraAxis(transform.localPosition.x, transform.localPosition.y);
         }
 
         // every 2 seconds perform the print()

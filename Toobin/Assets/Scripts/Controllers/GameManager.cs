@@ -72,8 +72,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
-    public void SetCameraYaxis(float playerYPosition)
+    public void SetCameraAxis(float playerXPosition, float playerYPosition)
     {
-        mainCamera.transform.position = new Vector3(0, playerYPosition, 0);
+        mainCamera.transform.position = new Vector3(playerXPosition, playerYPosition, 0);
     }
 }
