@@ -12,18 +12,25 @@ namespace ToobinLib.Controllers
         //E = R Paddle Backward
         //A = L Paddle Forward
         //D = R Paddle Forward
+        public static PlayerController Instance;
 
         private IEnumerator coroutine = null;
         [SerializeField] int m_alpha = 0;
         [SerializeField] int m_speed = 100;
+        int m_oldSpeed;
+        public const int MAX_SPEED = 150;
         [SerializeField] Rigidbody2D m_rigidbody2D;
         int current_lives = 2;
         const int MAX_LIVES = 2;
         bool m_isGoingForward = true;
         bool m_isKeyPressed = false;
 
+        public int Speed { get => m_speed; set => m_speed = value; }
+        public int Speed1 { get => m_speed; set => m_speed = value; }
+
         private void Start()
         {
+            Instance = this;
             GameManager.Instance.PointsInterface.UpdateLives(current_lives);
         }
 
@@ -82,6 +89,25 @@ namespace ToobinLib.Controllers
             GameManager.Instance.SetCameraAxis(transform.localPosition.x, transform.localPosition.y);
         }
 
+        public void EnterStream()
+        {
+            m_oldSpeed = m_speed;
+            m_speed = MAX_SPEED;
+            if (m_isGoingForward)
+                m_rigidbody2D.velocity = -transform.up * m_speed;
+            else
+                m_rigidbody2D.velocity = transform.up * m_speed;
+        }
+
+        public void ExitStream()
+        {
+            m_speed = m_oldSpeed;
+            if (m_isGoingForward)
+                m_rigidbody2D.velocity = -transform.up * m_speed;
+            else
+                m_rigidbody2D.velocity = transform.up * m_speed;
+        }
+
         // every 2 seconds perform the print()
         private IEnumerator ChangeSpeed(bool isIncrease, float waitTime)
         {
@@ -97,7 +123,7 @@ namespace ToobinLib.Controllers
                 }
                 else
                 {
-                    m_speed = Mathf.Min(m_speed + 5, 150);
+                    m_speed = Mathf.Min(m_speed + 5, MAX_SPEED);
                 }
             }
             else
@@ -110,7 +136,7 @@ namespace ToobinLib.Controllers
                 }
                 else
                 {
-                    m_speed = Mathf.Min(m_speed + 5, 150);
+                    m_speed = Mathf.Min(m_speed + 5, MAX_SPEED);
                 }
             }
         }

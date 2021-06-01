@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using ToobinLib.Controllers;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
-    enum ItemType { Can, GreenChest, RedChest, GoldChest, Ball }
+    enum ItemType { Can, GreenChest, RedChest, GoldChest, Ball, Stream }
 
     [SerializeField] ItemType m_itemType;
     // green - 200 pt
@@ -22,6 +23,10 @@ public class ItemController : MonoBehaviour
         switch (m_itemType)
         {
             case ItemType.Can:
+                break;
+
+            case ItemType.Stream:
+                PlayerController.Instance.EnterStream();
                 break;
 
             case ItemType.GreenChest:
@@ -46,5 +51,19 @@ public class ItemController : MonoBehaviour
                 break;
         }
         print("item interacted with " + collider.gameObject.name);
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.tag != "Player")
+            return;
+
+        switch (m_itemType)
+        {
+            case ItemType.Stream:
+                PlayerController.Instance.ExitStream();
+                Debug.Log("exit");
+                break;
+        }
     }
 }
