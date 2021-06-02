@@ -213,16 +213,25 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ccb559abb9ff64cceb3d9d068e26cea3, type: 3}
     volume: 0.459
     pitch: 1.13
+    loop: 0
     source: {fileID: 0}
   - name: CollectItem
     clip: {fileID: 8300000, guid: 3e3e07a542fa64891a1396fac71bd81a, type: 3}
     volume: 0.434
     pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: WaterSplash
     clip: {fileID: 8300000, guid: 4a06dbb072c1f4abd96129532fa7ecdf, type: 3}
     volume: 0.434
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ToobinTheme
+    clip: {fileID: 8300000, guid: cf7a7601e9258451abd7f355b8f61aa1, type: 3}
+    volume: 0.305
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &783994994
 Transform:

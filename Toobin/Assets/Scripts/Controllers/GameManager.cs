@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
                 m_level.SetActive(false);
                 m_startScreen.SetActive(true);
                 m_gameOver.SetActive(false);
+                //play sound
+                FindObjectOfType<AudioManager>().Play("ToobinTheme");
                 break;
 
             case GameState.Level1:
@@ -45,12 +47,16 @@ public class GameManager : MonoBehaviour
                 m_startScreen.SetActive(false);
                 m_level.SetActive(true);
                 m_gameOver.SetActive(false);
+                //play sound
+                FindObjectOfType<AudioManager>().Stop("ToobinTheme");
+                FindObjectOfType<AudioManager>().Play("FirstStageTheme");
                 break;
 
             case GameState.GameOver:
                 //m_startScreen.SetActive(false);
                 //m_level.SetActive(false);
                 m_gameOver.SetActive(true);
+                FindObjectOfType<AudioManager>().Stop("FirstStageTheme");
                 break;
         }
     }
