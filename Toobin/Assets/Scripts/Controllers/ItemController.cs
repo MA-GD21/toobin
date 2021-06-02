@@ -34,6 +34,8 @@ public class ItemController : MonoBehaviour
                 GameManager.Instance.PointsInterface.UpdatePoints(GameManager.Instance.Points);
                 gameObject.SetActive(false);
                 Destroy(this);
+                //play sound
+                FindObjectOfType<AudioManager>().Play("CollectItem");
                 break;
 
             case ItemType.RedChest:
