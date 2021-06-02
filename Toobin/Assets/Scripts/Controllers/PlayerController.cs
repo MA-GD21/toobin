@@ -24,60 +24,103 @@ namespace ToobinLib.Controllers
         const int MAX_LIVES = 2;
         bool m_isGoingForward = true;
         bool m_isKeyPressed = false;
+        Animator m_anim;
 
         public int Speed { get => m_speed; set => m_speed = value; }
-        public int Speed1 { get => m_speed; set => m_speed = value; }
 
         private void Start()
         {
             Instance = this;
             GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+            m_anim = GetComponent<Animator>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            // L Paddle Forward
-            if (Input.GetKeyDown(KeyCode.A))
-            {   //i think this code adds too much +5 to m_alpha (the turn angle) during one button press. Maybe use a courotine to only add +5 once?
+            if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.D))
+            {
+                m_anim.Play("PlayerDoubleArmSwim");
+                // A
                 m_alpha += 5;
                 m_isKeyPressed = true;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
-                //Is there a better solution to accelerate the player? 
                 m_rigidbody2D.velocity = -transform.up * m_speed;
                 Handlecoroutine(true);
-            }
-
-            //R Paddle Forward
-            if (Input.GetKeyDown(KeyCode.D))
-            {
+                // D
                 m_isKeyPressed = true;
                 m_alpha += -5;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
                 m_rigidbody2D.velocity = -transform.up * m_speed;
                 Handlecoroutine(true);
             }
-
-            //need code for button press R paddle forward & l paddle forward to just accelerate the player without turning him in either direction
-
-            // L Paddle Backwards
-            if (Input.GetKeyDown(KeyCode.Q))
+            else
             {
+                // L Paddle Forward
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    m_anim.Play("PlayerRightArmSwim");
+                    m_alpha += 5;
+                    m_isKeyPressed = true;
+                    transform.Rotate(new Vector3(0, 0, m_alpha));
+                    m_rigidbody2D.velocity = -transform.up * m_speed;
+                    Handlecoroutine(true);
+                }
+
+                //R Paddle Forward
+                if (Input.GetKeyDown(KeyCode.D))
+                {
+                    m_anim.Play("PlayerLeftArmSwim");
+                    m_isKeyPressed = true;
+                    m_alpha += -5;
+                    transform.Rotate(new Vector3(0, 0, m_alpha));
+                    m_rigidbody2D.velocity = -transform.up * m_speed;
+                    Handlecoroutine(true);
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q) && Input.GetKeyDown(KeyCode.E))
+            {
+                m_anim.Play("PlayerDoubleArmSwim");
+                //Q
                 m_isKeyPressed = true;
                 m_alpha += 5;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
                 m_rigidbody2D.velocity = transform.up * m_speed;
                 Handlecoroutine(false);
-            }
 
-            // R Paddle Backwards
-            if (Input.GetKeyDown(KeyCode.E))
-            {
+                //E
                 m_isKeyPressed = true;
                 m_alpha += -5;
                 transform.Rotate(new Vector3(0, 0, m_alpha));
                 m_rigidbody2D.velocity = transform.up * m_speed;
                 Handlecoroutine(false);
+            }
+            else
+            {
+                //need code for button press R paddle forward & l paddle forward to just accelerate the player without turning him in either direction
+
+                // L Paddle Backwards
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    m_anim.Play("PlayerRightArmSwim");
+                    m_isKeyPressed = true;
+                    m_alpha += 5;
+                    transform.Rotate(new Vector3(0, 0, m_alpha));
+                    m_rigidbody2D.velocity = transform.up * m_speed;
+                    Handlecoroutine(false);
+                }
+
+                // R Paddle Backwards
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    m_anim.Play("PlayerLeftArmSwim");
+                    m_isKeyPressed = true;
+                    m_alpha += -5;
+                    transform.Rotate(new Vector3(0, 0, m_alpha));
+                    m_rigidbody2D.velocity = transform.up * m_speed;
+                    Handlecoroutine(false);
+                }
             }
 
             if (!m_isKeyPressed || m_rigidbody2D.velocity == Vector2.zero || m_speed == 0)
