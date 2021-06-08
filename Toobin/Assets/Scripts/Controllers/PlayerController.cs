@@ -38,8 +38,10 @@ namespace ToobinLib.Controllers
         bool m_isGoingForward = true;
         bool m_isKeyPressed = false;
         Animator m_anim;
+        bool m_isDrank = false;
 
         public int Speed { get => m_speed; set => m_speed = value; }
+        public bool IsDrank { get => m_isDrank; set => m_isDrank = value; }
 
         private void Start()
         {
