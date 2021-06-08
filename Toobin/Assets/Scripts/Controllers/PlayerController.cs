@@ -13,6 +13,12 @@ namespace ToobinLib.Controllers
         public KeyCode lPaddle;
         public KeyCode rPaddle;
 
+        // Current mapping throughout the game
+        private KeyCode lPaddleBackRT;
+        private KeyCode rPaddleBackRT;
+        private KeyCode lPaddleRT;
+        private KeyCode rPaddleRT;
+        
         //Q = L Paddle Backward
         //E = R Paddle Backward
         //A = L Paddle Forward
@@ -35,6 +41,7 @@ namespace ToobinLib.Controllers
 
         private void Start()
         {
+            ResetControls();
             Instance = this;
             GameManager.Instance.PointsInterface.UpdateLives(current_lives);
             m_anim = GetComponent<Animator>();
@@ -43,7 +50,7 @@ namespace ToobinLib.Controllers
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(lPaddle) && Input.GetKeyDown(rPaddle))
+            if (Input.GetKeyDown(lPaddleRT) && Input.GetKeyDown(rPaddleRT))
             {
                 m_anim.Play("PlayerDoubleArmSwim");
                 // A
@@ -62,7 +69,7 @@ namespace ToobinLib.Controllers
             else
             {
                 // L Paddle Forward
-                if (Input.GetKeyDown(lPaddle))
+                if (Input.GetKeyDown(lPaddleRT))
                 {
                     m_anim.Play("PlayerRightArmSwim");
                     m_alpha += 5;
@@ -73,7 +80,7 @@ namespace ToobinLib.Controllers
                 }
 
                 //R Paddle Forward
-                if (Input.GetKeyDown(rPaddle))
+                if (Input.GetKeyDown(rPaddleRT))
                 {
                     m_anim.Play("PlayerLeftArmSwim");
                     m_isKeyPressed = true;
@@ -84,7 +91,7 @@ namespace ToobinLib.Controllers
                 }
             }
 
-            if (Input.GetKeyDown(lPaddleBack) && Input.GetKeyDown(rPaddleBack))
+            if (Input.GetKeyDown(lPaddleBackRT) && Input.GetKeyDown(rPaddleBackRT))
             {
                 m_anim.Play("PlayerDoubleArmSwim");
                 //Q
@@ -106,7 +113,7 @@ namespace ToobinLib.Controllers
                 //need code for button press R paddle forward & l paddle forward to just accelerate the player without turning him in either direction
 
                 // L Paddle Backwards
-                if (Input.GetKeyDown(lPaddleBack))
+                if (Input.GetKeyDown(lPaddleBackRT))
                 {
                     m_anim.Play("PlayerRightArmSwim");
                     m_isKeyPressed = true;
@@ -117,7 +124,7 @@ namespace ToobinLib.Controllers
                 }
 
                 // R Paddle Backwards
-                if (Input.GetKeyDown(rPaddleBack))
+                if (Input.GetKeyDown(rPaddleBackRT))
                 {
                     m_anim.Play("PlayerLeftArmSwim");
                     m_isKeyPressed = true;
@@ -136,6 +143,25 @@ namespace ToobinLib.Controllers
             m_alpha = 0;
         }
 
+
+        public void ReverseControls()
+        {
+            // Flip around controls to make the game confusing
+            lPaddleBackRT = rPaddleBack;
+            rPaddleBackRT = lPaddleBack;
+            lPaddleRT = rPaddle;
+            rPaddleRT = lPaddle;
+        }
+
+        public void ResetControls()
+        {
+            // Map runtime controls to standard controls
+            lPaddleBackRT = lPaddleBack;
+            rPaddleBackRT = rPaddleBack;
+            lPaddleRT = lPaddle;
+            rPaddleRT = rPaddle;
+        }
+        
         public void EnterStream()
         {
             m_oldSpeed = m_speed;

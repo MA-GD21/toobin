@@ -17,17 +17,21 @@ public class CameraManager : MonoBehaviour
     {
         // Check if player is ahead of the other player
         Transform leadPlayer = players[0];
+        float averageXPos = 0.0f;
+        
         for (int i = 0; i < players.Length; i++)
         {
             if (players[i].localPosition.y < leadPlayer.localPosition.y) leadPlayer = players[i];
+            averageXPos += players[i].localPosition.x;
         }
-        
-        setCamera(leadPlayer);
+
+        // Always average camera xPosition between players
+        averageXPos = averageXPos / players.Length;
+        setCamera(leadPlayer, averageXPos);
     }
 
-    void setCamera(Transform target)
+    void setCamera(Transform target, float xPos)
     {
-        // TODO Camera is awkward when switching players; fixed camera to average x-position instead of target.localPosition.x
-        GameManager.Instance.SetCameraAxis(68.0f, target.localPosition.y);
+        GameManager.Instance.SetCameraAxis(xPos, target.localPosition.y);
     }
 }
