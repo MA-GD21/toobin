@@ -25,7 +25,10 @@ public class ItemController : MonoBehaviour
         {
             case ItemType.Can:
                 // flip controls
+                player.IsDrank = true;
                 player.ReverseControls();
+                gameObject.SetActive(false);
+                Destroy(this);
                 break;
 
             case ItemType.Stream:
@@ -64,7 +67,10 @@ public class ItemController : MonoBehaviour
             
             case ItemType.Coffee:
                 // Reset
+                player.IsDrank = false;
                 player.ResetControls();
+                gameObject.SetActive(false);
+                Destroy(this);
                 break;
         }
         print("item interacted with " + collider.gameObject.name);

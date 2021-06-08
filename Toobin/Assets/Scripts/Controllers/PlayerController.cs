@@ -20,6 +20,9 @@ namespace ToobinLib.Controllers
         private KeyCode rPaddleBackRT;
         private KeyCode lPaddleRT;
         private KeyCode rPaddleRT;
+
+        private bool m_isDrank = false;
+        public bool IsDrank { get => m_isDrank; set => m_isDrank = value; }
         
         //Q = L Paddle Backward
         //E = R Paddle Backward
