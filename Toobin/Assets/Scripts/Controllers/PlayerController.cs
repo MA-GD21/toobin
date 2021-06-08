@@ -8,6 +8,8 @@ namespace ToobinLib.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
+        public int playerID;
+        
         public KeyCode lPaddleBack;
         public KeyCode rPaddleBack;
         public KeyCode lPaddle;
@@ -43,7 +45,8 @@ namespace ToobinLib.Controllers
         {
             ResetControls();
             Instance = this;
-            GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives, 0);
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives, 1);
             m_anim = GetComponent<Animator>();
         }
 
@@ -226,7 +229,7 @@ namespace ToobinLib.Controllers
         public void GetDamage()
         {
             current_lives--;
-            GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives, playerID);
 
             if (current_lives <= 0)
             {
@@ -242,7 +245,7 @@ namespace ToobinLib.Controllers
             if (current_lives > MAX_LIVES)
                 current_lives = MAX_LIVES;
 
-            GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+            GameManager.Instance.PointsInterface.UpdateLives(current_lives, playerID);
         }
 
         private void OnTriggerEnter2D(Collider2D collider)
@@ -252,7 +255,7 @@ namespace ToobinLib.Controllers
             {
                 m_speed = 0;
                 current_lives--;
-                GameManager.Instance.PointsInterface.UpdateLives(current_lives);
+                GameManager.Instance.PointsInterface.UpdateLives(current_lives, playerID);
                 if (current_lives <= 0)
                 {
                     // Game Over

@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public GameState GameState { get => m_gameState; set => m_gameState = value; }
     public int Points { get => m_points; set => m_points = value; }
+    public int Points_p2 { get => m_points; set => m_points = value; }
     public PointsInterface PointsInterface { get => m_pointsInterface; set => m_pointsInterface = value; }
 
     public void SetGameState(GameState gameState)
