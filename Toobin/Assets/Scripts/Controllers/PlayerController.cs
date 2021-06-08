@@ -8,6 +8,11 @@ namespace ToobinLib.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
+        public KeyCode lPaddleBack;
+        public KeyCode rPaddleBack;
+        public KeyCode lPaddle;
+        public KeyCode rPaddle;
+
         //Q = L Paddle Backward
         //E = R Paddle Backward
         //A = L Paddle Forward
@@ -38,7 +43,7 @@ namespace ToobinLib.Controllers
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(lPaddle) && Input.GetKeyDown(rPaddle))
             {
                 m_anim.Play("PlayerDoubleArmSwim");
                 // A
@@ -57,7 +62,7 @@ namespace ToobinLib.Controllers
             else
             {
                 // L Paddle Forward
-                if (Input.GetKeyDown(KeyCode.A))
+                if (Input.GetKeyDown(lPaddle))
                 {
                     m_anim.Play("PlayerRightArmSwim");
                     m_alpha += 5;
@@ -68,7 +73,7 @@ namespace ToobinLib.Controllers
                 }
 
                 //R Paddle Forward
-                if (Input.GetKeyDown(KeyCode.D))
+                if (Input.GetKeyDown(rPaddle))
                 {
                     m_anim.Play("PlayerLeftArmSwim");
                     m_isKeyPressed = true;
@@ -79,7 +84,7 @@ namespace ToobinLib.Controllers
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Q) && Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(lPaddleBack) && Input.GetKeyDown(rPaddleBack))
             {
                 m_anim.Play("PlayerDoubleArmSwim");
                 //Q
@@ -101,7 +106,7 @@ namespace ToobinLib.Controllers
                 //need code for button press R paddle forward & l paddle forward to just accelerate the player without turning him in either direction
 
                 // L Paddle Backwards
-                if (Input.GetKeyDown(KeyCode.Q))
+                if (Input.GetKeyDown(lPaddleBack))
                 {
                     m_anim.Play("PlayerRightArmSwim");
                     m_isKeyPressed = true;
@@ -112,7 +117,7 @@ namespace ToobinLib.Controllers
                 }
 
                 // R Paddle Backwards
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(rPaddleBack))
                 {
                     m_anim.Play("PlayerLeftArmSwim");
                     m_isKeyPressed = true;
@@ -129,7 +134,6 @@ namespace ToobinLib.Controllers
             m_isKeyPressed = false;
 
             m_alpha = 0;
-            GameManager.Instance.SetCameraAxis(transform.localPosition.x, transform.localPosition.y);
         }
 
         public void EnterStream()
