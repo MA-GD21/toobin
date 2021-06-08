@@ -50,14 +50,14 @@ public class GameManager : MonoBehaviour
                 m_gameOver.SetActive(false);
                 //play sound
                 FindObjectOfType<AudioManager>().Stop("ToobinTheme");
-                FindObjectOfType<AudioManager>().Play("FirstStageTheme");
+                FindObjectOfType<AudioManager>().Play("ToobinFirstStage");
                 break;
 
             case GameState.GameOver:
                 //m_startScreen.SetActive(false);
                 //m_level.SetActive(false);
                 m_gameOver.SetActive(true);
-                FindObjectOfType<AudioManager>().Stop("FirstStageTheme");
+                FindObjectOfType<AudioManager>().Stop("ToobinFirstStage");
                 break;
         }
     }

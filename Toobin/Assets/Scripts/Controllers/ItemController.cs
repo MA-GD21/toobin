@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
-    enum ItemType { Can, GreenChest, RedChest, GoldChest, Ball, Stream, Gate, Coffee, Beer }
+    enum ItemType { Can, GreenChest, RedChest, GoldChest, Ball, Stream, Coffee, Gate }
 
     [SerializeField] ItemType m_itemType;
     // green - 200 pt
@@ -15,7 +15,7 @@ public class ItemController : MonoBehaviour
     const int RED_POINTS = 500;
     const int GOLD_POINTS = 1000;
     const int SCORE_POINTS = 150;
-
+    
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag != "Player")
@@ -23,18 +23,6 @@ public class ItemController : MonoBehaviour
         PlayerController player = collider.GetComponent<PlayerController>();
         switch (m_itemType)
         {
-            case ItemType.Coffee:
-                PlayerController.Instance.IsDrank = false;
-                gameObject.SetActive(false);
-                // Reset
-                player.ResetControls();
-                break;
-
-            case ItemType.Beer:
-                PlayerController.Instance.IsDrank = true;
-                gameObject.SetActive(false);
-                break;
-
             case ItemType.Can:
                 // flip controls
                 player.ReverseControls();
@@ -45,7 +33,7 @@ public class ItemController : MonoBehaviour
                 break;
 
             case ItemType.GreenChest:
-                AddPoints(GREEN_POINTS, player);
+                AddPoints(GREEN_POINTS, player); 
                 gameObject.SetActive(false);
                 Destroy(this);
                 //play sound
@@ -56,16 +44,27 @@ public class ItemController : MonoBehaviour
                 AddPoints(RED_POINTS, player);
                 gameObject.SetActive(false);
                 Destroy(this);
+                //play sound
+                FindObjectOfType<AudioManager>().Play("CollectItem");
                 break;
 
             case ItemType.GoldChest:
-                AddPoints(GOLD_POINTS, player);
+                AddPoints(GOLD_POINTS, player); 
                 gameObject.SetActive(false);
                 Destroy(this);
+                //play sound
+                FindObjectOfType<AudioManager>().Play("CollectItem");
                 break;
-
+            
             case ItemType.Gate:
                 AddPoints(SCORE_POINTS, player);
+                //play sound
+                FindObjectOfType<AudioManager>().Play("CollisionGate");
+                break;
+            
+            case ItemType.Coffee:
+                // Reset
+                player.ResetControls();
                 break;
         }
         print("item interacted with " + collider.gameObject.name);
