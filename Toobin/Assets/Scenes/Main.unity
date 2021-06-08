@@ -255,6 +255,12 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: ToobinFirstStage
+    clip: {fileID: 8300000, guid: 21457611af5ab4be7b57ae6a1a6d9d07, type: 3}
+    volume: 0.305
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &783994994
 Transform:
   m_ObjectHideFlags: 0
