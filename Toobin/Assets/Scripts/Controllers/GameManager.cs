@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] PointsInterface m_pointsInterface;
 
     int m_points;
+    private bool m_drunkShaderOn = false;
+    public bool DrunkShaderOn { get => m_drunkShaderOn; set => m_drunkShaderOn = value; }
+
 
     public static GameManager Instance;
 

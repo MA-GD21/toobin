@@ -26,6 +26,7 @@ public class ItemController : MonoBehaviour
             case ItemType.Can:
                 // flip controls
                 player.IsDrank = true;
+                GameManager.Instance.DrunkShaderOn = true;
                 player.ReverseControls();
                 gameObject.SetActive(false);
                 Destroy(this);
@@ -68,6 +69,7 @@ public class ItemController : MonoBehaviour
             case ItemType.Coffee:
                 // Reset
                 player.IsDrank = false;
+                GameManager.Instance.DrunkShaderOn = false;
                 player.ResetControls();
                 gameObject.SetActive(false);
                 Destroy(this);
