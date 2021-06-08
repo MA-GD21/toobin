@@ -14,11 +14,11 @@ public class PointsInterface : MonoBehaviour
     [SerializeField] TMP_Text m_points_p2;
     [SerializeField] TMP_Text highscore;
     int m_pointValue;
-    int m_livesvalue;
+    int m_livesValue;
     int m_highscore;
     
     int m_pointValue_p2;
-    int m_livesvalue_p2;
+    int m_livesValue_p2;
     
     void Start()
     {
@@ -44,12 +44,12 @@ public class PointsInterface : MonoBehaviour
     {
         if (playerID == 0)
         {
-            m_livesvalue = value;
+            m_livesValue = value;
             m_lives.text = "Lives: " + value;
         }
         else
         {
-            m_livesvalue_p2 = value;
+            m_livesValue_p2 = value;
             m_lives_p2.text = "Lives: " + value;
         }
     }
